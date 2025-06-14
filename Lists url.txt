@@ -1,0 +1,39 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://adwhatm.com
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   302
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              html,txt,yml,bak
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/ajax                 (Status: 404) [Size: 83]
+/css                  (Status: 404) [Size: 82]
+/docs                 (Status: 404) [Size: 83]
+/download             (Status: 200) [Size: 106]
+/favicon.ico.yml      (Status: 404) [Size: 94]
+/favicon.ico.html     (Status: 404) [Size: 95]
+/favicon.ico.bak      (Status: 404) [Size: 94]
+/favicon.ico.txt      (Status: 404) [Size: 94]
+/favicon.ico          (Status: 200) [Size: 16958]
+/fonts                (Status: 404) [Size: 84]
+/html                 (Status: 404) [Size: 83]
+/img                  (Status: 404) [Size: 82]
+/js                   (Status: 404) [Size: 81]
+/login                (Status: 200) [Size: 4041]
+/meta-inf             (Status: 404) [Size: 87]
+/META-INF             (Status: 404) [Size: 87]
+/register             (Status: 200) [Size: 4108]
+/upload               (Status: 200) [Size: 63]
+/web-inf              (Status: 404) [Size: 86]
+/WEB-INF              (Status: 404) [Size: 86]
+Progress: 23070 / 23075 (99.98%)
+===============================================================
+Finished
+===============================================================

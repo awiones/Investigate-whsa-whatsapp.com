@@ -1,0 +1,7 @@
+   
+   
+   
+PasswordAuthentication yes
+PubkeyAuthentication yes
+
+RSAAuthentication yes

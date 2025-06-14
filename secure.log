@@ -1,0 +1,8 @@
+Jun  8 17:18:18 lax021887 polkitd[3098]: Loading rules from directory /etc/polkit-1/rules.d
+Jun  8 17:18:18 lax021887 polkitd[3098]: Loading rules from directory /usr/share/polkit-1/rules.d
+Jun  8 17:18:18 lax021887 polkitd[3098]: Finished loading, compiling and executing 2 rules
+Jun  8 17:18:18 lax021887 polkitd[3098]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Jun  8 17:28:36 lax021887 polkitd[3118]: Loading rules from directory /etc/polkit-1/rules.d
+Jun  8 17:28:36 lax021887 polkitd[3118]: Loading rules from directory /usr/share/polkit-1/rules.d
+Jun  8 17:28:36 lax021887 polkitd[3118]: Finished loading, compiling and executing 2 rules
+Jun  8 17:28:36 lax021887 polkitd[3118]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
