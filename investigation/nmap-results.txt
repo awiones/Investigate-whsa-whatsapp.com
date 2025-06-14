@@ -1,0 +1,142 @@
+awiones@oza ~ » nmap -sV -p- --script=http-headers,ssl-cert adwhatm.com                                           127 ↵
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-06-13 21:12 +07
+Nmap scan report for adwhatm.com (38.85.201.87)
+Host is up (0.18s latency).
+Not shown: 64522 filtered tcp ports (no-response), 1002 closed tcp ports (reset)
+PORT      STATE SERVICE    VERSION
+21/tcp    open  tcpwrapped
+22/tcp    open  ssh        OpenSSH 7.4 (protocol 2.0)
+80/tcp    open  http       nginx
+| http-headers:
+|   Server: nginx
+|   Date: Fri, 13 Jun 2025 14:26:13 GMT
+|   Content-Type: text/html;charset=UTF-8
+|   Connection: close
+|   Vary: Accept-Encoding
+|   Vary: Origin
+|   Vary: Access-Control-Request-Method
+|   Vary: Access-Control-Request-Headers
+|   Content-Language: zh-CN
+|   Cache-Control: no-cache
+|
+|_  (Request type: HEAD)
+|_http-trane-info: Problem with XML parsing of /evox/about
+443/tcp   open  ssl/http   nginx
+| http-headers:
+|   Server: nginx
+|   Date: Fri, 13 Jun 2025 14:26:14 GMT
+|   Content-Length: 0
+|   Connection: close
+|   Set-Cookie: JSESSIONID=9856bc5e-639f-42fb-8b88-ece23378f841; Path=/; HttpOnly; SameSite=lax
+|   Location: http://adwhatm.com/login
+|   Cache-Control: no-cache
+|
+|_  (Request type: GET)
+| ssl-cert: Subject: commonName=adwhatm.com
+| Subject Alternative Name: DNS:adwhatm.com
+| Issuer: commonName=R11/organizationName=Let's Encrypt/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-05-06T00:47:43
+| Not valid after:  2025-08-04T00:47:42
+| MD5:   9451:f136:2dad:9ae3:238a:6911:dd8f:a271
+|_SHA-1: 3429:c8d3:7ed6:78fa:52de:f26a:ca0e:f04e:6702:7ea1
+554/tcp   open  rtsp?
+888/tcp   open  http       nginx
+| http-headers:
+|   Server: nginx
+|   Date: Fri, 13 Jun 2025 14:26:13 GMT
+|   Content-Type: text/html
+|   Content-Length: 146
+|   Connection: close
+|
+|_  (Request type: GET)
+1723/tcp  open  pptp?
+1818/tcp  open  ssl/etftp?
+| ssl-cert: Subject: commonName=servih.com
+| Subject Alternative Name: DNS:servih.com
+| Issuer: commonName=R10/organizationName=Let's Encrypt/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-05-06T00:47:17
+| Not valid after:  2025-08-04T00:47:16
+| MD5:   6a08:8997:e4ce:c27e:efb6:c6e5:6ef0:f114
+|_SHA-1: 5c4e:d31b:1468:51aa:24a3:97de:9d82:ce7e:960d:449f
+| fingerprint-strings:
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, HTTPOptions, Help, Kerberos, RPCCheck, RTSPRequest, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie:
+|     HTTP/1.0 400 Bad Request
+|     Server: workerman
+|     <div style="text-align:center"><h1>400 Bad Request</h1><hr>workerman</div>
+|   GetRequest:
+|     HTTP/1.0 400 Bad Request
+|     Server: workerman
+|_    <div style="text-align:center"><h1>WebSocket</h1><hr>workerman</div>
+3306/tcp  open  mysql      MySQL 5.7.44-log
+| ssl-cert: Subject: commonName=MySQL_Server_5.7.44_Auto_Generated_Server_Certificate
+| Issuer: commonName=MySQL_Server_5.7.44_Auto_Generated_CA_Certificate
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-02-25T07:25:49
+| Not valid after:  2035-02-23T07:25:49
+| MD5:   c863:3b8d:4b50:2178:d45a:ec7a:d07f:c012
+|_SHA-1: 7a0c:07e6:d2e6:db12:ec03:2d77:68f6:1fce:9d58:fffb
+9999/tcp  open  http       Apache Tomcat (language: en)
+| http-headers:
+|   Vary: Origin
+|   Vary: Access-Control-Request-Method
+|   Vary: Access-Control-Request-Headers
+|   Content-Type: text/html;charset=UTF-8
+|   Content-Language: zh-CN
+|   Content-Length: 4041
+|   Date: Fri, 13 Jun 2025 14:26:13 GMT
+|   Connection: close
+|
+|_  (Request type: HEAD)
+|_http-trane-info: Problem with XML parsing of /evox/about
+18972/tcp open  http       Ajenti http control panel
+|_http-server-header: nginx
+| http-headers:
+|   Content-Type: text/html
+|   Content-Length: 146
+|   Server: nginx
+|   Date: Fri, 13 Jun 2025 14:26:13 GMT
+|
+|_  (Request type: GET)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1818-TCP:V=7.95%T=SSL%I=7%D=6/13%Time=684C3489%P=x86_64-pc-linux-gn
+SF:u%r(GetRequest,73,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nServer:\x20wor
+SF:kerman\r\n\r\n<div\x20style=\"text-align:center\"><h1>WebSocket</h1><hr
+SF:>workerman</div>")%r(HTTPOptions,79,"HTTP/1\.0\x20400\x20Bad\x20Request
+SF:\r\nServer:\x20workerman\r\n\r\n<div\x20style=\"text-align:center\"><h1
+SF:>400\x20Bad\x20Request</h1><hr>workerman</div>")%r(RTSPRequest,79,"HTTP
+SF:/1\.0\x20400\x20Bad\x20Request\r\nServer:\x20workerman\r\n\r\n<div\x20s
+SF:tyle=\"text-align:center\"><h1>400\x20Bad\x20Request</h1><hr>workerman<
+SF:/div>")%r(RPCCheck,79,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nServer:\x2
+SF:0workerman\r\n\r\n<div\x20style=\"text-align:center\"><h1>400\x20Bad\x2
+SF:0Request</h1><hr>workerman</div>")%r(DNSVersionBindReqTCP,79,"HTTP/1\.0
+SF:\x20400\x20Bad\x20Request\r\nServer:\x20workerman\r\n\r\n<div\x20style=
+SF:\"text-align:center\"><h1>400\x20Bad\x20Request</h1><hr>workerman</div>
+SF:")%r(DNSStatusRequestTCP,79,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nServ
+SF:er:\x20workerman\r\n\r\n<div\x20style=\"text-align:center\"><h1>400\x20
+SF:Bad\x20Request</h1><hr>workerman</div>")%r(Help,79,"HTTP/1\.0\x20400\x2
+SF:0Bad\x20Request\r\nServer:\x20workerman\r\n\r\n<div\x20style=\"text-ali
+SF:gn:center\"><h1>400\x20Bad\x20Request</h1><hr>workerman</div>")%r(SSLSe
+SF:ssionReq,79,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nServer:\x20workerman
+SF:\r\n\r\n<div\x20style=\"text-align:center\"><h1>400\x20Bad\x20Request</
+SF:h1><hr>workerman</div>")%r(TerminalServerCookie,79,"HTTP/1\.0\x20400\x2
+SF:0Bad\x20Request\r\nServer:\x20workerman\r\n\r\n<div\x20style=\"text-ali
+SF:gn:center\"><h1>400\x20Bad\x20Request</h1><hr>workerman</div>")%r(TLSSe
+SF:ssionReq,79,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nServer:\x20workerman
+SF:\r\n\r\n<div\x20style=\"text-align:center\"><h1>400\x20Bad\x20Request</
+SF:h1><hr>workerman</div>")%r(Kerberos,79,"HTTP/1\.0\x20400\x20Bad\x20Requ
+SF:est\r\nServer:\x20workerman\r\n\r\n<div\x20style=\"text-align:center\">
+SF:<h1>400\x20Bad\x20Request</h1><hr>workerman</div>")%r(SMBProgNeg,79,"HT
+SF:TP/1\.0\x20400\x20Bad\x20Request\r\nServer:\x20workerman\r\n\r\n<div\x2
+SF:0style=\"text-align:center\"><h1>400\x20Bad\x20Request</h1><hr>workerma
+SF:n</div>");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 869.30 seconds
