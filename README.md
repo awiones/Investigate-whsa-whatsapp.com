@@ -104,7 +104,8 @@ During the investigation, the following behaviors were observed when visiting re
   _This information was collected using my custom tool NEScan and public BGP resources to confirm the infrastructure and hosting details behind adwhatm.com._
 
 - **aop.owox-id.com** (discovered via WebSocket response from `wss://servih.com:1818`):  
-  Attempting to access this backend directly resulted in a `403 Forbidden` error.  
+  Attempting to access this backend directly resulted in a `403 Forbidden` error.
+    
   ![How I got it](https://github.com/awiones/Investigate-whsa-whatsapp.com/blob/main/img/got%20it.PNG)
 
 ---
