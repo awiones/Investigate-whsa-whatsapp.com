@@ -114,7 +114,6 @@ During the investigation, the following behaviors were observed when visiting re
 
 At first, I thought this was just a simple WhatsApp phishing scam. But as I dug deeper, it became clear that the infrastructure is much more dangerous and far-reaching. The same network hosts a variety of suspicious and malicious sites, not just phishing pages. This is a whole ecosystem of scams, gambling, fake shops, crypto, and more.
 
-#### 🟢 Working URLs with Page Titles
 
 | IP Address    | URL                              | Page Title / Description                                   |
 | ------------- | -------------------------------- | ---------------------------------------------------------- |
