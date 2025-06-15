@@ -1,0 +1,22 @@
+
+| IP Address         | URL (Protocol)              | Page Title (What it says)                                 |
+|--------------------|-----------------------------|------------------------------------------------------------|
+| 38.85.201.15       | https://38.85.201.15        | 抱歉，站点已暂停 *(Sorry, the site has been suspended)*     |
+| 38.85.201.19       | https://38.85.201.19        | 澳門六合彩票澳門六合彩票 *(Macau Lottery Repetition)*        |
+| 38.85.201.28       | http://38.85.201.28         | 恭喜，站点创建成功！*(Congrats, the site was created!)*      |
+| 38.85.201.48       | https://38.85.201.48        | TK-Store | buy, sell and discover on TK                    |
+| 38.85.201.54       | http://38.85.201.54/login   | Redirected (Login page, accessible via HTTP)              |
+| 38.85.201.68       | http://38.85.201.68         | 恭喜，站点创建成功！*(Congrats, the site was created!)*      |
+| 38.85.201.86       | https://38.85.201.86/index/login | login page                                           |
+| 38.85.201.90       | https://38.85.201.90        | Redirect to http://222.fypub.top/ *(external)*           |
+| 38.85.201.114      | https://38.85.201.114       | Shop - Your Global Shopping Platform                     |
+| 38.85.201.120      | https://38.85.201.120       | app                                                      |
+| 38.85.201.150      | http://38.85.201.150        | admin – 又一个WordPress站点 *(Yet another WordPress site)*  |
+| 38.85.201.153      | https://38.85.201.153       | sousuoyixiabaiduzhidao！- 发布 *(Post something!)*          |
+| 38.85.201.173      | https://38.85.201.173       | 接口配置系统 *(Interface Configuration System)*            |
+| 38.85.201.180      | http://38.85.201.180        | xGame                                                    |
+| 38.85.201.185      | https://38.85.201.185/web/  | QFSCOIN: Cloud Mining | Best Cloud Mining Platform       |
+| 38.85.201.217      | https://38.85.201.217/m/one/one | DeFi                                                   |
+| 38.85.201.226      | https://38.85.201.226       | SHEIN                                                    |
+| 38.85.201.231      | https://38.85.201.231/m/one/one | DeFi                                                   |
+

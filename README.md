@@ -71,9 +71,72 @@ During the investigation, the following behaviors were observed when visiting re
 
   ![adwhatm.com login page](img/adwhatm-page.PNG)
 
+  ***
+
+  **Network and BGP Information (via [NEScan](https://github.com/awiones/NEScan) & bgp.he.net):**
+
+  - **IP Address:** 38.85.201.87
+  - **Version:** IPv4
+  - **Network Class:** A (Range: 1.0.0.0 to 126.255.255.255)
+  - **Purpose:** Large networks and organizations
+  - **Network Address:** 38.85.201.0
+  - **Broadcast Address:** 38.85.201.255
+  - **Netmask:** 255.255.255.0
+  - **Prefix Length:** /24
+  - **Subnet Type:** Class C default
+  - **Address Range:** 38.85.201.1 - 38.85.201.254
+  - **Binary:** 00100110010101011100100101010111
+  - **Hexadecimal:** 0x2655c957
+  - **Decimal:** 643156311
+  - **Octal:** 46.125.311.127
+  - **Geolocation:** Los Angeles, California, US (34.0544, -118.244)
+  - **Timezone:** America/Los_Angeles
+  - **ISP:** Cogent Communications
+  - **Organization:** Kurun Cloud Inc
+  - **AS:** AS8796 FASTNET DATA INC
+  - **BGP Announcements:**
+    | Origin AS | Announcement | Description |
+    |-----------|---------------------|------------------|
+    | AS174 | 38.0.0.0/8 | IRR Valid |
+    | AS174 | 38.0.0.0/9 | IRR Parent Valid |
+    | AS8796 | 38.85.201.0/24 | IRR Valid |
+
+  _This information was collected using my custom tool NEScan and public BGP resources to confirm the infrastructure and hosting details behind adwhatm.com._
+
 - **aop.owox-id.com** (discovered via WebSocket response from `wss://servih.com:1818`):  
   Attempting to access this backend directly resulted in a `403 Forbidden` error.  
-  ![How I got it](img/got it.PNG)
+  ![How I got it](https://github.com/awiones/Investigate-whsa-whatsapp.com/blob/main/img/got%20it.PNG)
+
+---
+
+### 🚨 A Deeper Rabbit Hole: More Than Just WhatsApp Phishing
+
+At first, I thought this was just a simple WhatsApp phishing scam. But as I dug deeper, it became clear that the infrastructure is much more dangerous and far-reaching. The same network hosts a variety of suspicious and malicious sites, not just phishing pages. This is a whole ecosystem of scams, gambling, fake shops, crypto, and more.
+
+#### 🟢 Working URLs with Page Titles
+
+| IP Address    | URL                              | Page Title / Description                                   |
+| ------------- | -------------------------------- | ---------------------------------------------------------- |
+| 38.85.201.15  | https://38.85.201.15             | 抱歉，站点已暂停 (Sorry, the site has been suspended)      |
+| 38.85.201.19  | https://38.85.201.19             | 澳門六合彩票澳門六合彩票 (Macau Lottery Repetition)        |
+| 38.85.201.28  | http://38.85.201.28              | 恭喜，站点创建成功！(Congrats, the site was created!)      |
+| 38.85.201.48  | https://38.85.201.48             | TK-Store                                                   |
+| 38.85.201.54  | http://38.85.201.54/login        | Redirected (Login page, accessible via HTTP)               |
+| 38.85.201.68  | http://38.85.201.68              | 恭喜，站点创建成功！(Congrats, the site was created!)      |
+| 38.85.201.86  | https://38.85.201.86/index/login | login page                                                 |
+| 38.85.201.90  | https://38.85.201.90             | Redirect to http://222.fypub.top/ (external)               |
+| 38.85.201.114 | https://38.85.201.114            | Shop - Your Global Shopping Platform                       |
+| 38.85.201.120 | https://38.85.201.120            | app                                                        |
+| 38.85.201.150 | http://38.85.201.150             | admin – 又一个 WordPress 站点 (Yet another WordPress site) |
+| 38.85.201.153 | https://38.85.201.153            | sousuoyixiabaiduzhidao！- 发布 (Post something!)           |
+| 38.85.201.173 | https://38.85.201.173            | 接口配置系统 (Interface Configuration System)              |
+| 38.85.201.180 | http://38.85.201.180             | xGame                                                      |
+| 38.85.201.185 | https://38.85.201.185/web/       | QFSCOIN: Cloud Mining                                      |
+| 38.85.201.217 | https://38.85.201.217/m/one/one  | DeFi                                                       |
+| 38.85.201.226 | https://38.85.201.226            | SHEIN                                                      |
+| 38.85.201.231 | https://38.85.201.231/m/one/one  | DeFi                                                       |
+
+_This shows the scale and diversity of the malicious infrastructure behind the scenes. It’s not just about WhatsApp phishing—this is a much bigger operation!_
 
 ## 📥 Downloading the Arsenal
 
